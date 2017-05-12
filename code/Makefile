@@ -77,7 +77,7 @@ O_FILES = strings.o \
 		  prof.o
 tartarus: $(O_FILES)
 	rm -f rift
-	$(CC) $(PROF) -o rift $(O_FILES) $(L_FLAGS)
+	$(CC) $(PROF) -o rift.out $(O_FILES) $(L_FLAGS)
 	chmod 770 *.o
 
 clean:
