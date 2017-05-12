@@ -2,7 +2,7 @@ CC      = g++
 PROF    = -O1 -g
 INCLUDES= -w $(PROF) $(NOCRYPT) -I/usr/include/mysql
 #INCLUDES=  -Wall -Wno-unused-variable -Wno-deprecated $(PROF) $(NOCRYPT) -I/usr/include/mysql -lmysqlclient 
-L_FLAGS =  -lm -lcrypt -L/usr/lib -lmysqlclient
+L_FLAGS =  -lm -lcrypt -L/usr/lib/mysql -lmysqlclient
 
 O_FILES = strings.o \
 		  file.o \
